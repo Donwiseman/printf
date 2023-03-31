@@ -56,6 +56,8 @@ int _printf(const char *format, ...)
 		{'u', print_unsigned_num},
 		{'b', print_binary},
 		{'o', print_octal},
+		{'x', printf_hex},
+		{'X', printf_HEX},
 		{'\0', NULL}
 	};
 	const char *fp = format;

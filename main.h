@@ -21,5 +21,5 @@ int print_octal(va_list args);
 int printf_HEX(va_list val);
 int _puts(va_list str);
 int _printf(const char *format, ...);
-int printf_hex(va_list val)
+int printf_hex(va_list val);
 #endif /* MAIN_H */
