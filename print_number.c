@@ -39,7 +39,7 @@ int print_num(int n)
 	/*use recursion if remainder value is not zero*/
 	if (n != 0)
 	{
-		count = print_num(n);
+		count += print_num(n);
 	}
 	_putchar(48 + lastn);
 	count++;
