@@ -77,6 +77,7 @@ int _printf(const char *format, ...)
 			spec = *fp;
 			print_count += print_args(arr, spec, args);
 			fp++;
+		       /* continue;*/
 		}
 		else
 		{
