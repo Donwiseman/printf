@@ -17,7 +17,7 @@ int _puts(va_list str)
 	/* as an argument */
 	if (string == NULL)
 	{
-		string = "(NULL)";
+		string = "(null)";
 	}
 	while (*string)
 	{
