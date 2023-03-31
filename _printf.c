@@ -75,9 +75,11 @@ int _printf(const char *format, ...)
 		{
 			fp++;/*move to next char after %*/
 			spec = *fp;
-			print_count += print_args(arr, spec, args);
-			fp++;
-		       /* continue;*/
+			if (spec)
+			{
+				print_count += print_args(arr, spec, args);
+				fp++;
+			}
 		}
 		else
 		{

@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <limits.h>
 
 /**
  * _abs - returns absolute of a number except INT_MIN
