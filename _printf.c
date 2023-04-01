@@ -75,11 +75,13 @@ int _printf(const char *format, ...)
 		{
 			fp++;/*move to next char after %*/
 			spec = *fp;
-			if (spec)
+			if (spec == '\0')
 			{
-				print_count += print_args(arr, spec, args);
-				fp++;
+				print_count += _putchar('%');
+				return (print_count);
 			}
+			print_count += print_args(arr, spec, args);
+			fp++;
 		}
 		else
 		{
